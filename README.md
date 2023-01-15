@@ -64,7 +64,7 @@
 ### Description
 I needed to automate some tasks and schedule automated reports to be sent to my mailbox. So, I developed this Python package to use SMTP server and send automated mails directly from my server. 
 
-* The package includes the following features:
+The package includes the following features:
 * Clean code and good documentation.
 * Include multiple recipients.
 * Include multiple CCs.
