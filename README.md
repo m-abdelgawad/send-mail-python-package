@@ -156,4 +156,4 @@ Github Profile Link: [https://github.com/m-abdelgawad](https://github.com/m-abde
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/m-abdelgawad/
-[cover]: images/cover.jpg
+[cover]: images/cover-image.jpg
