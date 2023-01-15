@@ -1,0 +1,6 @@
+smtp:
+  hostname: smtp.zoho.com  # Put SMTP server here
+  port: 465  # Put the port of the SMTP server here
+  sender: support@automagicdeveloper.com  # put the sender mail account here
+  password: PasswordHere  # Put the password of the sender mail account here
+  sender_title: AutoMagic Developer Support  # <Put the title of the sender here
