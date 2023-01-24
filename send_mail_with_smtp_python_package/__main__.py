@@ -19,17 +19,19 @@ def main():
         mail_body = f.read()
 
     smtp_dict = {
-        'hostname': config['smtp']['hostname'],
+        'ip': config['smtp']['ip'],
         'port': config['smtp']['port'],
-        'sender': config['smtp']['sender'],
+        'username': config['smtp']['username'],
         'password': config['smtp']['password'],
+        'sender_mail': config['smtp']['sender_mail'],
         'sender_title': config['smtp']['sender_title'],
+        'is_ssl': config['smtp']['is_ssl'],
     }
 
     mail_dict = {
-        'subject': "Database Daily Backup Report",
-        'recipients': ['muhammadabdelgawwad@gmail.com', ],
-        'cc': ['muhammadabdelgawwad@gmail.com', ],
+        'subject': "Test Report",
+        'recipients': ['mohamed.aboatta@vodafone.com.eg', ],
+        'cc': ['mohamed.aboatta@vodafone.com.eg', ],
         'attachments': [],
         'message': mail_body,
     }
