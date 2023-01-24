@@ -30,8 +30,8 @@ def main():
 
     mail_dict = {
         'subject': "Test Report",
-        'recipients': ['mohamed.aboatta@vodafone.com.eg', ],
-        'cc': ['mohamed.aboatta@vodafone.com.eg', ],
+        'recipients': ['muhammadabdelgawwad@gmail.com', ],
+        'cc': ['muhammadabdelgawwad@gmail.com', ],
         'attachments': [],
         'message': mail_body,
     }
