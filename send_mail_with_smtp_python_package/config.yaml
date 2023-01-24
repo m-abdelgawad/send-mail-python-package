@@ -4,5 +4,11 @@ smtp:
   username: SMTP_Username  # Put the username of the SMTP account here
   password: SMTP_Password  # Put the password of the SMTP account here
   sender_mail: support@automagicdeveloper.com  # put the sender mail account here
-  sender_title: AutoMagic Developer Support  # <Put the title of the sender here
+  sender_title: AutoMagic Developer Support  # Put the title of the sender here
   is_ssl: True
+
+mail:
+  subject: Test Report
+  to: [ 'muhammadabdelgawwad@gmail.com', ]  # A list of the recipients
+  cc: [ 'muhammadabdelgawwad@gmail.com', ] # A list of the CCs
+  attachments: []

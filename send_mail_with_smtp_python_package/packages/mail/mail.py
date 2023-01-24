@@ -22,7 +22,7 @@ def send(smtp_dict, mail_dict):
 
     :param mail_dict: A dictionary with the following keys:
         - subject: The subject of the mail.
-        - recipients: A list of the email addresses of the receivers.
+        - to: A list of the email addresses of the receivers.
         - cc: A list of the email addresses in the CC.
         - attachments: A list of the paths of the attachments.
         - message: The message to be sent.
@@ -43,7 +43,7 @@ def send(smtp_dict, mail_dict):
     ))
 
     # Send the recipients
-    msg['To'] = ', '.join(mail_dict['recipients'])
+    msg['To'] = ', '.join(mail_dict['to'])
 
     # Set the CCs
     msg['Cc'] = ', '.join(mail_dict['cc'])
@@ -81,7 +81,7 @@ def send(smtp_dict, mail_dict):
     # Send the mail
     server.sendmail(
         smtp_dict['sender_mail'],
-        mail_dict['recipients'] + mail_dict['cc'],
+        mail_dict['to'] + mail_dict['cc'],
         msg.as_string()
     )
 

@@ -29,10 +29,10 @@ def main():
     }
 
     mail_dict = {
-        'subject': "Test Report",
-        'recipients': ['muhammadabdelgawwad@gmail.com', ],
-        'cc': ['muhammadabdelgawwad@gmail.com', ],
-        'attachments': [],
+        'subject': config['mail']['subject'],
+        'recipients': config['mail']['to'],
+        'cc': config['mail']['cc'],
+        'attachments': config['mail']['attachments'],
         'message': mail_body,
     }
 
