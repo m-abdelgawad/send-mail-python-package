@@ -61,9 +61,10 @@ def send(smtp_dict, mail_dict):
         # Encode file in ASCII characters to send by email
         encoders.encode_base64(part)
         # Add header as key/value pair to attachment part
+        file_name = file.split('/')[-1]  # Extract file name from file path
         part.add_header(
             "Content-Disposition",
-            f"attachment; filename= {file}",
+            f"attachment; filename= {file_name}",
         )
         msg.attach(part)
 
